@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItGit</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h2 class="if-else">Работа с кнопками и условия</h2>
+        
+        <!-- Задача 1 (Работа с кнопками и условия) -->
+        <div class="box if-else">
+            <h3>Задача 1</h3>
+            <p>Показать значение ползунка и вывести его при нажатие на кнопку </p>
+            <input type="range" min="0" max="200" value="0" class="inText">
+            <button class="btnPush">push</button>
+            <div class="online">0</div>
+            <div class="output">0</div>
+        </div>
+
+        <!-- Задача 2 (Работа с кнопками и условия) -->
+        <div class="box if-else">
+            <h3>Задача 2</h3>
+            <p>Если чек-бокс нажат, вывеси "активно" при нажатие на кнопку.<br>Если не нажат, вывести "неактивно" при нажатие на кнопку</p>
+            
+            <input type="checkbox" id="cheked" class="myCheck"><label for="cheked">Нажать</label>
+            <button class="send">Отправить</button>
+            <div class="output-for-check">Не активно</div>
+        </div>
+
+
+        <h2 class="cycles">Циклы</h2>
+
+        <!-- Задача 3 (Циклы) -->
+        <div class="box cycles">
+            <h3>Задача 3</h3>
+            <p>
+                Кнопка .b-1 запускает функцию t1. Функция должна выводить в .out-1 строку вида:
+                <br>
+                1_2_3_4_5_6_7_8_9_10_11_12_13_14_15_16_
+            </p>
+
+            <button class="get_number">цикл</button>
+            <div class="for_number">ждем....</div>
+        </div>
+
+        <!-- Задача 4 (Циклы) -->
+        <div class="box cycles">
+            <h3>Задача 4</h3>
+            <p>
+                Кнопка .b-2 запускает функцию t2. Функция должна выводить в .out-2 строку вида:
+                <br>
+                12_14_16_18_20_22_24_26_28_30_32_34_36_38_
+            </p>
+
+            <button class="b-2">цикл 2</button>
+            <div class="out-2">ждем....</div>
+        </div>
+
+        <!-- Задача 5 (Циклы) -->
+        <div class="box cycles">
+            <h3>Задача 5</h3>
+            <p>
+                Кнопка .b-3 запускает функцию t3. Функция должна выводить в .out-3 строку вида:
+                <br>
+                25_24_23_22_21_20_19_18_17_16_15_14_13_12_11_10_9_8_7_
+            </p>
+
+            <button class="b-3">цикл 3</button>
+            <div class="out-3">ждем....</div>
+        </div>
+
+        <h2 class="cycles-in-cycles">Циклы в циклах</h2>
+
+        <!-- Задача 6 (Цыклы в циклах) -->
+        <div class="box cycles-in-cycles">
+            <h3>Задача 6</h3>
+            <p>
+                С помощью вложенных циклов, нарисуйте строку:
+                <br>
+                ***_***_***_
+            </p>
+
+            <button class="b-4">цикл в цикле</button>
+            <div class="out-4">wait....</div>
+        </div>
+
+        <!-- Задача 7 (Цыклы в циклах) -->
+        <div class="box cycles-in-cycles">
+            <h3>Задача 7</h3>
+            <p>
+                С помощью вложенных циклов, нарисуйте строку:
+                <br>
+                1 <br>
+                *_*_*_<br>
+                2<br>
+                *_*_*_<br>
+                3<br>
+                *_*_*_<br>
+            </p>
+
+            <button class="b-7">цикл в цикле</button>
+            <div class="out-7">wait....</div>
+        </div>
+
+        <!-- Задача 8 (Цыклы в циклах) -->
+        <div class="box cycles-in-cycles">
+            <h3>Задача 8</h3>
+            <p>
+                С помощью вложенных циклов, нарисуйте строку:
+                <br>
+                *_*_*_<br>
+                *_*_*_<br>
+                *_*_*_<br>
+            </p>
+
+            <button class="b-8">цикл в цикле</button>
+            <div class="out-8">wait....</div>
+        </div>
+
+        <!-- Задача 9 (Цыклы в циклах) -->
+        <div class="box cycles-in-cycles">
+            <h3>Задача 9</h3>
+            <p>
+                С помощью вложенных циклов и символов 1 и 0, нарисуйте прямоугольник.<br>
+                Выводите 1 или 0 в зависимости от того четная переменая или нет<br>
+                101010<br>
+                101010<br>
+                101010<br>
+            </p>
+
+            <button class="b-9">цикл в цикле</button>
+            <div class="out-9">wait....</div>
+        </div>
+
+        <h2 class="func">Функции</h2>
+
+        <!-- Задача 10 (функции) -->
+        <div class="box func">
+            <h3>Задача 10</h3>
+            <p>
+                Напишите функцию t1, которая при нажатии кнопки выводит в .out-1 переменную a1.
+            </p>
+
+            <button class="b-10">функция</button>
+            <div class="out-10">Ожидаем вывод переменой "a1"...</div>
+        </div>
+
+        <!-- Задача 11 (функции) -->
+        <div class="box func">
+            <h3>Задача 11</h3>
+            <p>
+                Изменим задачу 1. Сейчас она только выводит переменную в заранее заданный блок.<br>
+                Давайте сделаем так, чтобы функция, была более гибкой.<br>
+                Пусть теперь функция t2 возвращает (return) переменную a2.Поскольку функция возвращает переменную,<br> 
+                то имя функции со скобками (вызов функции) можно встраивать в выражения.<br>
+                Обратите внимание, как изменяется вызов функции теперь.
+            </p>
+
+            <button class="b-11">функция</button>
+            <div class="out-11">Ожидаем вывод переменой "a1"...</div>
+        </div>
+
+        <!-- Задача 12 (функции) -->
+        <div class="box func">
+            <h3>Задача 12</h3>
+            <p>
+                Наша предыдущая функция, сильно все еще зависима от внешних переменных.<br>
+                Давайте сделаем ее более универсальной.<br>
+                Пусть функция t3 принимает 2 аргумента и возвращает (return) их произведение.<br>
+                Допишите код функции так, чтобы она возвращала произведение двух чисел,<br>
+                переданных ей в качестве аргументов a, b.
+            </p>
+
+            <button class="b-12">Произведение</button>
+            <div class="out-12">Ожидаем...</div>
+        </div>
+
+        <!-- Произвольная задача -->
+        <div class="box func">
+            <h3>Произвольная задача</h3>
+            <p>
+              При нажатие на кнопку получить произведение инпутов
+            </p>
+            <input type="number" name="one" id="one"> <label for="one">первое чиcло</label>
+            <input type="number" name="two" id="two"> <label for="one">второе чиcло</label>
+
+            <button class="b-013">Произведение</button>
+            <div class="out-013">Ожидаем...</div>
+        </div>
+
+        <h2 class="while">while , do-while</h2>
+
+        <!-- Задача 13 (while , do-while) -->
+        <div class="box while">
+            <h3>Задача 13</h3>
+            <p>
+                Кнопка b-1 запускает функцию t1.Функция должна выводить в .out-1 строку вида<br>
+                1_2_3_4_5_6_7_8_9_ ... 49_50_<br>
+                Вы выводите все числа от 1 до 50. Три точки мы не выводим!!!!!
+            </p>
+
+            <button class="b-13">Пуск</button>
+            <div class="out-13">Ожидаем...</div>
+        </div>
+
+        <!-- Задача 14 (while , do-while) -->
+        <div class="box while">
+            <h3>Задача 14</h3>
+            <p>
+                Кнопка .b-2 запускает функцию t2. Функция должна выводить в .out-2 строку вида:<br>
+                12_14_16_18_20_22_24_26_28_30_32_34_36_38_
+            </p>
+
+            <button class="b-14">Пуск</button>
+            <div class="out-14">Ожидаем...</div>
+        </div>
+
+         <!-- Задача 15 (while , do-while) -->
+         <div class="box while">
+            <h3>Задача 15</h3>
+            <p>
+                Кнопка .b-3 запускает функцию t3. Функция должна выводить в .out-3 строку вида:<br>
+                25_24_23_22_21_20_19_18_17_16_15_14_13_12_11_10_9_8_7_<br>
+                от 25 до 7 c шагом 1. Разделитель - нижнее подчеркивание. Задача решается с помощью цикла while.
+            </p>
+
+            <button class="b-15">Пуск</button>
+            <div class="out-15">Ожидаем...</div>
+        </div>
+
+        <h2 class="dom">Работа с DOM</h2>
+
+        <!-- Задача 16 (Работа с DOM) -->
+        <div class="box dom">
+            <h3>Задача 16 - 17 - 18</h3>
+
+            <p>По нажатию на кнопку .b-1 функция присваивает блоку .out-1 ширину 200px, высоту 90px.</p>
+            <p>По нажатию на кнопку .b-2 функция f2, которая присваивает блоку .out-2 класс .bg-orange.</p>
+            <p>По нажатию кнопки .b-3 запускайте функцию f3, которая удаляет у блока .out-3 класс .bg-orange.</p>
+
+            <button class="b-16">b-1<br>Изменить размеры</button>
+            <button class="b-17">b-2<br>Добавить класс</button>
+            <button class="b-18">b-3<br>Сброс</button>
+            <div class="out-16"></div>
+        </div>
+
+
+        <h2 class="arr">Массивы</h2>
+        <!-- Задача 19 (Массивы) -->
+        <div class="box arr">
+            <h3>Задача 19</h3>
+
+            <p>По нажатию на кнопку BUTTON вывести массив</p>
+            <p>Вывести длину массива</p>
+            <p>Наименьший элемент</p>
+            <p>Наибольший элемент</p>
+            <p>Сумму элементов</p>
+
+            <button class="b-19">button</button>
+            <div class="out-19-1">Массив...</div>
+            <div class="out-19-2">Длина массива...</div>
+            <div class="out-19-3">Наименьший элемент..</div>
+            <div class="out-19-4">Наибольший элемент...</div>
+            <div class="out-19-5">Сума элементов...</div>
+        </div>
+        
+
+        <!-- Задача 20 (Массивы) -->
+        <div class="box arr">
+            <h3>Задача 20 PUSH-POP-SHIFT-UNSHIFT</h3>
+
+            <p>
+                Есть массив d1, кнопка b-1, input i-1. Напишите функцию f1,<br>
+                которая при нажатии читает i-1 и добавляем его в массив.<br>
+                После чего выводит массив в .out-1.
+            </p>
+            <p>
+                Поскольку мы будем выводить массив d1 неоднократно,<br>
+                то давайте вывод массива сделаем отдельной функцией,<br>
+                showArr - она подготовлена. Изучите ее - это хороший способ оптимизировать код.
+            </p>
+            
+
+            <input type="text" class="in-20">
+            <br>
+            <button class="btn-20">push</button>
+            <button class="btn-20-1">pop</button>
+            <button class="btn-20-3">shift</button>
+            <button class="btn-20-2">unshift</button>
+            
+
+
+            <div class="out-20">[33,'best', 66, 'best']</div>
+            
+        </div>
+
+        
+
+     
+    </div>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
