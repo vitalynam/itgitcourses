@@ -344,7 +344,7 @@ let btn17 = document.querySelector('.b-17'); // кнопка
 let btn18 = document.querySelector('.b-18'); // кнопка
 
 btn16.onclick = () =>{
-    out16.style.width = '200px';
+    out16.style.width = '60%';
     out16.style.height = '90px';
 }
 
@@ -352,8 +352,8 @@ btn17.onclick = () =>{
     out16.classList.add('bg-orange');
 }
 btn18.onclick = () =>{
-    out16.style.width = '300px';
-    out16.style.height = '300px';
+    out16.style.width = '90%';
+    out16.style.height = '100px';
     out16.classList.remove('bg-orange');
 }
 
