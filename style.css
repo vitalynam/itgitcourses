@@ -16,7 +16,6 @@
 h2{
     text-align: center;
     text-transform: uppercase;
-    display: block;
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -108,14 +107,23 @@ button:active{
 
 
 @media (max-width: 800px) { 
-    /* p{
-        font-size: 8px;
+
+    *{
+        font-size: 10px;
     }
-    .out-3{
-        font-size: 8px;
-    } */
+    h2{
+        width: 250px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) { 
 
     *{
         font-size: 8px;
+    }
+    h2{
+        width: 180px;
+        font-size: 12px;
     }
 }
