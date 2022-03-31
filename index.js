@@ -437,3 +437,48 @@ btn20_3.onclick = () =>{
     arr20.shift()
     showArr();
 }
+
+
+
+// При нажатии на кнопку arr1 вывести элемент массива первого уровня
+
+// При нажатии на кнопку arr2 вывести элемент массива второго уровня
+
+// При нажатии на кнопку arr2 вывести элемент массива третьего уровня
+
+// [ 12, ["строчка", "строка", [true, false], 'string'], 8 ]
+
+
+let out21 = document.querySelector('.out-21'); // поле вывода
+
+
+let btn21_1 = document.querySelector('.btn-21-1'); 
+let btn21_2 = document.querySelector('.btn-21-2'); 
+let btn21_3 = document.querySelector('.btn-21-3'); 
+
+
+let arr21 =  [12, ["строчка", "строка", [ 'true', 'false'], 'string'],8 ]
+
+btn21_1.onclick = () =>{
+    out21.innerText = `[0] =>  ${arr21[0]} ` ;
+}
+btn21_2.onclick = () =>{
+    out21.innerText = `[1] => [0] => ${arr21[1][0]}`;
+}
+btn21_3.onclick = () =>{
+    out21.innerText = `[1] => [2] =>[0] => ${arr21[1][2][0]}`;
+}
+
+
+
+
+let btnc = document.querySelector('.cont-btn'); 
+let container = document.querySelector('.container'); 
+btnc.onclick = () =>{
+    
+    if(container.classList.contains('hidden')){
+        container.classList.remove('hidden')
+    }else{
+        container.classList.add('hidden')
+    }
+}

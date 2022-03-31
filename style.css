@@ -12,6 +12,7 @@
     margin-bottom: 200px;
     padding-left: 15px;
     padding-right: 15px;
+    transition: all 0.2s;
 }
 h2{
     text-align: center;
@@ -126,4 +127,9 @@ button:active{
         width: 180px;
         font-size: 12px;
     }
+}
+
+
+.hidden{
+    display: none;
 }
